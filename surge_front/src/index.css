@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-image {
+    background-image: url("/Hero_BG.png");
+}
+
+.card {
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+.card.away {
+    opacity: 0;
+    transform: translateY(-120vh) rotate(-48deg);
+}
+
+.card:hover {
+    transition: all ease-in-out 300ms;
+    border: 8px solid #333;
+    border-style: solid;
+    background-color: #6b46c1;
+}
